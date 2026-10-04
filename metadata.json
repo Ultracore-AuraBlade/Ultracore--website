@@ -1,0 +1,6 @@
+{
+  "name": "UltraCore — Official Product Website",
+  "description": "The official product and reveal website for UltraCore and Baburao. Your AI. Your Bro. AURA__BLADE IS HERE.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
