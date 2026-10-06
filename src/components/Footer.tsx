@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Globe, Github, Twitter, Shield, FileText, X } from 'lucide-react';
+import { Mail, Globe, Github, Twitter, Shield, FileText, X, Instagram, ArrowUpRight } from 'lucide-react';
 import { ULTRACORE_BRAND } from '../data/ultracore-data';
 
 interface FooterProps {
@@ -119,6 +119,18 @@ export const Footer: React.FC<FooterProps> = ({ onScrollTo }) => {
             <h3 className="font-mono text-xs font-bold text-white uppercase tracking-widest mb-3">
               OFFICIAL CHANNELS
             </h3>
+            <div className="pb-1">
+              <a
+                href="https://www.instagram.com/aura__blade/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-cyan-950/60 border border-cyan-500/30 text-xs font-mono text-cyan-300 hover:text-white hover:border-cyan-400 transition-all group"
+              >
+                <Instagram className="w-3.5 h-3.5 text-cyan-400" />
+                <span>@aura__blade</span>
+                <ArrowUpRight className="w-3 h-3 text-cyan-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </a>
+            </div>
             <p className="text-xs text-slate-400 leading-relaxed">
               Official community channels, verified GitHub repository, and direct APK mirrors will be announced simultaneously with the public build drop.
             </p>

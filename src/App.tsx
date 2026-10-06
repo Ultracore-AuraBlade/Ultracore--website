@@ -15,6 +15,7 @@ import { ScreenshotsPreview } from './components/ScreenshotsPreview';
 import { ApkDownloadSection } from './components/ApkDownloadSection';
 import { DevelopmentStatus } from './components/DevelopmentStatus';
 import { PrivacySection } from './components/PrivacySection';
+import { SocialSection } from './components/SocialSection';
 import { Footer } from './components/Footer';
 
 export default function App() {
@@ -35,6 +36,9 @@ export default function App() {
         {/* Hero Section */}
         <Hero onScrollTo={scrollToSection} />
 
+        {/* Launch Info & Countdown Section */}
+        <LaunchCountdown />
+
         {/* Baburao Companion Section */}
         <BaburaoSection />
 
@@ -47,9 +51,6 @@ export default function App() {
         {/* Latest Updates / Development Changelog */}
         <LatestUpdates />
 
-        {/* Launch Countdown / Launch Date Announcement */}
-        <LaunchCountdown />
-
         {/* Inside UltraCore / Screenshots Preview */}
         <ScreenshotsPreview />
 
@@ -61,6 +62,9 @@ export default function App() {
 
         {/* Transparent Privacy Policy */}
         <PrivacySection />
+
+        {/* Connect / Official Instagram Section */}
+        <SocialSection />
       </main>
 
       {/* Official Minimalist Footer */}

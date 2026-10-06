@@ -40,11 +40,16 @@ export const ULTRACORE_BRAND = {
 };
 
 export const LAUNCH_CONFIG = {
-  // If launchDate is null, the site displays "LAUNCH DATE — TO BE ANNOUNCED"
-  // When a launch date is finalized, set e.g. "2026-12-15T00:00:00Z"
-  launchDate: null as string | null,
-  announcementNotice: 'LAUNCH DATE — TO BE ANNOUNCED',
-  targetQuarter: 'Targeting Release Window 2026',
+  // Official UltraCore APK Launch: 8 November 2026, 12:00 AM IST (Asia/Kolkata)
+  targetEpochMs: new Date('2026-11-08T00:00:00+05:30').getTime(),
+  launchDateISO: '2026-11-08T00:00:00+05:30',
+  displayDate: '8 NOVEMBER 2026',
+  heading: 'ULTRACORE APK LAUNCH',
+  timezoneLabel: 'IST (Asia/Kolkata)',
+  statusPreLaunch: 'COMING SOON',
+  statusPostLaunch: 'ULTRACORE IS LIVE',
+  liveHeadline: 'ULTRACORE IS LIVE.',
+  liveSubline: 'THE CORE HAS AWAKENED.',
 };
 
 export const APK_CONFIG = {
